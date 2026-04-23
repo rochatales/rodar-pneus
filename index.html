@@ -13,12 +13,24 @@
   </head>
   <body>
     <header class="site-header" id="header" data-header>
-      <a class="brand" href="#top" aria-label="Rodar Pneus - Página inicial">
-        <img
-          src="https://rodarpneus.com.br/wp-content/uploads/2026/02/Logos_rodar_nobackground-1.png"
-          alt="Rodar Pneus"
-        />
-      </a>
+      <div class="brand-cluster">
+        <a class="brand" href="#top" aria-label="Rodar Pneus - Página inicial">
+          <img
+            src="https://rodarpneus.com.br/wp-content/uploads/2026/02/Logos_rodar_nobackground-1.png"
+            alt="Rodar Pneus"
+          />
+        </a>
+        <a class="header-michelin" href="#michelin" aria-label="Michelin">
+          <img
+            src="assets/michelin-wordmark.svg"
+            alt="Michelin"
+          />
+        </a>
+        <div class="header-hours" aria-label="Horários de funcionamento">
+          <span>Segunda à sexta 8h às 18h</span>
+          <span>Sábado 8h às 12h</span>
+        </div>
+      </div>
 
       <button class="nav-toggle" type="button" aria-label="Abrir menu" data-nav-toggle>
         <span></span>
@@ -34,10 +46,15 @@
           <a href="#unidades">Unidades</a>
           <a href="#contato">Contato</a>
         </div>
-        <a class="header-cta" href="https://api.whatsapp.com/send?phone=5524999066146" target="_blank" rel="noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          Fale Conosco
-        </a>
+        <div class="header-actions">
+          <a class="header-social" href="https://www.instagram.com/rodarpneus/" target="_blank" rel="noreferrer" aria-label="Instagram Rodar Pneus">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.2"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.35" cy="6.65" r="1"></circle></svg>
+          </a>
+          <a class="header-cta" href="https://api.whatsapp.com/send?phone=5524999066146" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Fale Conosco
+          </a>
+        </div>
       </nav>
     </header>
     <div class="nav-overlay" data-nav-overlay></div>
@@ -45,10 +62,9 @@
     <main id="top">
       <section class="hero section-dark">
         <div class="hero-media" aria-hidden="true">
-          <img
-            src="assets/hero.png"
-            alt=""
-          />
+          <video autoplay muted loop playsinline poster="assets/hero.png">
+            <source src="assets/home_loopv01.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="tread-pattern" aria-hidden="true"></div>
@@ -57,7 +73,7 @@
           <div class="hero-copy">
             <h1>Segurança e performance começam pelo <span>pneu certo.</span></h1>
             <p class="hero-text">
-              Somos referência em Resende há quase 30 anos. Revendedor oficial Michelin com equipamentos de última geração, profissionais qualificados e atendimento de excelência.
+              Há 30 anos, a Rodar Pneus é referência em Resende em pneus e serviços automotivos. Revendedor oficial Michelin, unimos tecnologia de ponta, equipe especializada e atendimento de confiança para cuidar do seu veículo com excelência.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5524999066146" target="_blank" rel="noreferrer">
@@ -66,27 +82,6 @@
               </a>
               <a class="btn btn-secondary" href="#servicos">Conheça nossos serviços</a>
             </div>
-            <div class="trust-row" aria-label="Diferenciais da Rodar Pneus">
-              <div>
-                <strong>30</strong>
-                <span>Anos de tradição</span>
-              </div>
-              <div>
-                <strong>2</strong>
-                <span>Lojas em Resende</span>
-              </div>
-              <div>
-                <strong>3D</strong>
-                <span>Tecnologia de ponta</span>
-              </div>
-              <div class="trust-michelin">
-                <img
-                  src="https://rodarpneus.com.br/wp-content/uploads/2021/06/Michelin_C_H_WhiteBG_RGB_0703-01-1-300x89.png"
-                  alt="Michelin"
-                />
-                <span>Revendedor oficial</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -94,10 +89,22 @@
       <section class="about section" id="sobre">
         <div class="about-media" data-carousel aria-hidden="true">
             <div class="about-carousel-track" data-carousel-track>
-            <img class="is-active" src="assets/about.png" alt="" />
-            <img src="assets/hero.png" alt="" />
-            <img src="assets/tire-product.png" alt="" />
-            <img src="https://rodarpneus.com.br/wp-content/uploads/2021/05/pexels-pixabay-261986.png" alt="" />
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/about-bg-1.jpg?v=2">
+              <img class="is-active" src="assets/about-bg-desktop-1.jpg" alt="" />
+            </picture>
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/about-bg-2.jpg?v=2">
+              <img src="assets/about-bg-desktop-2.jpg" alt="" />
+            </picture>
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/about-bg-3.jpg?v=2">
+              <img src="assets/about-bg-desktop-3.jpg" alt="" />
+            </picture>
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/about-bg-4.png?v=2">
+              <img src="assets/about-bg-desktop-4.jpg" alt="" />
+            </picture>
             </div>
           <div class="about-dots" data-carousel-dots></div>
             </div>
@@ -105,12 +112,12 @@
         <div class="container about-layout">
           <div class="about-heading reveal">
             <span class="section-label"><span></span>Sobre nós</span>
-            <h2>Tradição e excelência<br />no cuidado automotivo.</h2>
+            <h2>Tradição e excelência no cuidado automotivo.</h2>
           </div>
 
           <div class="about-content reveal reveal-delay-2">
             <p>
-              Há quase três décadas, a Rodar Pneus é sinônimo de confiança e qualidade em Resende. Como autocenter oficial Michelin, unimos a autoridade de uma grande marca de pneus à experiência de uma equipe treinada.
+              Há mais de três décadas, a Rodar Pneus é sinônimo de confiança e qualidade em Resende. Como autocenter oficial Michelin, unimos a autoridade de uma grande marca de pneus à experiência de uma equipe treinada.
             </p>
             <p>
               Nossos dois centros automotivos contam com equipamentos modernos e calibrados, incluindo tecnologia de alinhamento 3D, para oferecer diagnósticos precisos e serviços que preservam a segurança e o desempenho do seu veículo.
@@ -118,12 +125,12 @@
 
             <div class="about-stats">
               <div>
-                <strong>~30</strong>
+                <strong>+30</strong>
                 <span>Anos de mercado</span>
               </div>
               <div>
                 <strong>2</strong>
-                <span>Unidades</span>
+                <span>Unidades em Resende</span>
               </div>
               <div>
                 <strong>3D</strong>
@@ -147,7 +154,7 @@
           <div class="service-grid">
             <article class="service-card">
               <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 4v3M12 17v3M4 12h3M17 12h3"></path></svg>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><path d="M12 4v2.5M12 17.5V20M4 12h2.5M17.5 12H20M6.3 6.3l1.8 1.8M15.9 15.9l1.8 1.8M17.7 6.3l-1.8 1.8M8.1 15.9l-1.8 1.8"></path></svg>
               </span>
               <h3>Troca de pneus</h3>
               <p>Venda, troca e rodízio com equipamentos aferidos e cuidado técnico na montagem.</p>
@@ -155,7 +162,7 @@
 
             <article class="service-card">
               <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M5 17h14"></path><path d="M7 17l2-9h6l2 9"></path><path d="M9 9h6"></path><path d="M6 20h2M16 20h2"></path></svg>
+                <svg viewBox="0 0 24 24"><path d="M9 3h6"></path><path d="M9 21h6"></path><path d="M9 5v2l6 3-6 3 6 3-6 3v2"></path></svg>
               </span>
               <h3>Suspensão</h3>
               <p>Revisão de componentes que influenciam conforto, estabilidade e contato com o solo.</p>
@@ -163,7 +170,7 @@
 
             <article class="service-card">
               <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"></circle><path d="M12 7v5l4 2"></path><path d="M4 4l3 3M20 4l-3 3"></path></svg>
+                <svg viewBox="0 0 24 24"><circle cx="10.5" cy="12" r="5.25"></circle><circle cx="10.5" cy="12" r="1.55"></circle><path d="M10.5 6.75v1.5M10.5 15.75v1.5M5.25 12h1.5M14.25 12h1.5"></path><path d="M15.75 8.75h1.5a2.25 2.25 0 0 1 2.25 2.25v2a2.25 2.25 0 0 1-2.25 2.25h-1.5"></path><path d="M16.5 10v4"></path></svg>
               </span>
               <h3>Freios</h3>
               <p>Inspeção e manutenção do sistema de frenagem para resposta segura e previsível.</p>
@@ -179,7 +186,7 @@
 
             <article class="service-card">
               <span class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M8 3h8v5l3 4v8H5v-8l3-4V3z"></path><path d="M9 3h6"></path><path d="M9 15h6"></path></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 3c2.8 3.7 4.6 6.1 4.6 8.7A4.6 4.6 0 1 1 7.4 11.7C7.4 9.1 9.2 6.7 12 3z"></path><path d="M10.2 14.6c.7.6 1.6.9 2.6.9 1.1 0 2-.3 2.7-1"></path></svg>
               </span>
               <h3>Troca de óleo</h3>
               <p>Lubrificantes conforme especificação do veículo e orientação sobre prazos de troca.</p>
@@ -200,12 +207,13 @@
         <div class="container feature-grid">
           <div class="feature-image michelin-showcase">
             <img
+              class="michelin-showcase-logo"
               src="https://rodarpneus.com.br/wp-content/uploads/2021/06/Michelin_C_H_WhiteBG_RGB_0703-01-1-1024x302.png"
               alt="Michelin"
             />
-            <div>
-              <span>linha premium</span>
-              <strong>Medida certa, aplicação correta, instalação precisa.</strong>
+            <div class="michelin-showcase-copy">
+              <span>LINHA PREMIUM PRIMACY 4</span>
+              <strong>Mais conforto, controle e performance no dia a dia</strong>
             </div>
           </div>
           <div class="feature-copy">
@@ -226,6 +234,7 @@
               target="_blank"
               rel="noreferrer"
             >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.35-4.35"></path></svg>
               Pesquisar pneus Michelin
             </a>
           </div>
@@ -236,7 +245,7 @@
         <div class="container">
           <div class="section-heading compact">
             <p class="eyebrow">Marcas parceiras</p>
-            <h2>Portfólio com marcas reconhecidas no setor automotivo.</h2>
+            <h2>Trabalhamos com as melhores marcas</h2>
           </div>
           <div class="brand-marquee" aria-label="Marcas trabalhadas">
             <div class="brand-track">
@@ -277,14 +286,6 @@
             referrerpolicy="no-referrer-when-downgrade"
             tabindex="-1"
           ></iframe>
-          <div class="map-pin map-pin-michelin">
-            <span></span>
-            <strong>Rodar Pneus Michelin</strong>
-          </div>
-          <div class="map-pin map-pin-multimarcas">
-            <span></span>
-            <strong>Rodar Pneus Multimarcas</strong>
-          </div>
         </div>
 
         <div class="container locations-content">
@@ -376,12 +377,21 @@
       <div class="container">
         <div class="footer-grid">
         <div class="footer-brand-block">
-          <a class="brand footer-brand" href="#top" aria-label="Rodar Pneus">
-            <img
-              src="https://rodarpneus.com.br/wp-content/uploads/2026/02/Logos_rodar_nobackground-1.png"
-              alt="Rodar Pneus"
-            />
-          </a>
+          <div class="footer-brand-lockup">
+            <a class="brand footer-brand" href="#top" aria-label="Rodar Pneus">
+              <img
+                src="https://rodarpneus.com.br/wp-content/uploads/2026/02/Logos_rodar_nobackground-1.png"
+                alt="Rodar Pneus"
+              />
+            </a>
+            <div class="trust-michelin trust-michelin-footer" aria-label="Revendedor oficial Michelin">
+              <img
+                src="https://rodarpneus.com.br/wp-content/uploads/2021/06/Michelin_C_H_WhiteBG_RGB_0703-01-1-300x89.png"
+                alt="Michelin"
+              />
+              <span>Revendedor oficial</span>
+            </div>
+          </div>
           <p>Autocenter oficial Michelin em Resende, RJ. Quase 30 anos de tradição em pneus e serviços automotivos com qualidade premium.</p>
           <div class="socials" aria-label="Redes sociais">
             <a href="https://www.instagram.com/rodarpneus" target="_blank" rel="noreferrer" aria-label="Instagram">

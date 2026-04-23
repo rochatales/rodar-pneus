@@ -43,7 +43,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { rootMargin: "0px 0px -60px 0px", threshold: 0.1 },
+  { rootMargin: "0px 0px -28px 0px", threshold: 0.08 },
 );
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
