@@ -22,6 +22,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
+  overflow-x: hidden;
 }
 
 body {
@@ -31,13 +32,16 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 body.nav-open {
   overflow: hidden;
 }
 
-img {
+img,
+iframe,
+video {
   display: block;
   max-width: 100%;
 }
@@ -547,6 +551,7 @@ p {
 }
 
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex;
   align-items: center;
@@ -1127,6 +1132,8 @@ p {
   display: flex;
   gap: 22px;
   overflow: hidden;
+  width: 100%;
+  min-width: 0;
   padding: 10px 0;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -1409,6 +1416,43 @@ address svg {
   grid-column: 1 / -1;
   width: 100%;
   min-height: 52px;
+}
+
+.form-submit.is-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.form-feedback {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-feedback.success {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25d366;
+}
+
+.form-feedback.error {
+  background: rgba(255, 80, 80, 0.12);
+  color: #ff5050;
+}
+
+.form-fallback {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-fallback .whatsapp-link {
+  color: var(--yellow);
+  font-weight: 760;
 }
 
 .site-footer {
@@ -1720,7 +1764,12 @@ address svg {
   }
 
   .hero-overlay {
-    background: linear-gradient(90deg, rgba(13, 13, 15, 0.98) 0%, rgba(13, 13, 15, 0.82) 100%);
+    background: linear-gradient(135deg, rgba(13, 13, 15, 0.9) 0%, rgba(13, 13, 15, 0.72) 50%, rgba(13, 13, 15, 0.45) 100%);
+  }
+
+  .hero-media video {
+    opacity: 0.55;
+    object-position: 66% center;
   }
 
   .hero-actions,
